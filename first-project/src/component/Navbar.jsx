@@ -3,7 +3,7 @@ import React from 'react'
 const Navbar = (props) => {
   return (
     <div>
-      {/* {props.title} */}
+     
       <nav class={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
         <div class="container-fluid">
           <a class="navbar-brand" href="#">{props.title}</a>

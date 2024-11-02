@@ -14,6 +14,7 @@ import {
 import Home from './component/Home';
 import About from './component/About';
 import Contact from './component/contact';
+import Classes from './component/Classes';
 
 const App = () => {
 
@@ -62,6 +63,7 @@ const App = () => {
 
         <Navbar title="this is header" mode={mode} style={{ color: textColor }} text={text} toggleMode={toggleMode} />
         <Alert alert={alert} showAlert={showAlert} />
+        <Classes/>
 
         <Routes>
           <Route path="/" element={<Home />} />

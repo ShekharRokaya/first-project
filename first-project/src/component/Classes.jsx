@@ -55,4 +55,4 @@ export default class Classes extends Component {
 // componentDidMount: Sets up an interval to update count every second.
 // shouldComponentUpdate: Only re-renders if the count is even.
 // componentDidUpdate: Logs every update after a re-render.
-// componentWillUnmount: Clears the interval on unmount.
+// componentWillUnmount: Clears the interval on unmount.    

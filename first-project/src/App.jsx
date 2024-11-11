@@ -14,10 +14,11 @@ import {
 import Home from './component/Home';
 import About from './component/About';
 import Contact from './component/contact';
-import Func from './component/Func';
-import Counter from './component/Counter';
+ import Func from './component/Func';
+import Counter from './component/Counter'; 
 import User from './component/User';
-/* import Classes from './component/Classes'; */
+import ProductState from './Context/productState';
+
 
 const App = () => {
 
@@ -61,23 +62,26 @@ const App = () => {
   return (
 
     <>
+    <ProductState>
+ 
       <Router>
 
 
         <Navbar title="this is header" mode={mode} style={{ color: textColor }} text={text} toggleMode={toggleMode} />
         <Alert alert={alert} showAlert={showAlert} />
        {/*  <Classes/> */}
-        <Func/>
-        <Counter/>
+       {/*  <Func/>
+        <Counter/> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/user/:fname/:lname" element={<User />} />
+          <Route path="/user/:username/:userid" element={<User />} />
 
 
         </Routes>
       </Router>
+      </ProductState>
     </>
   )
 }

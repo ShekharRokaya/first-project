@@ -34,7 +34,7 @@ const Navbar = (props) => {
                 <Link className="nav-link" to="/contact">Contact us</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/user/shikhar/rokaya">User</Link>
+                <Link className="nav-link" to="/user/shikhar/123">User</Link>
               </li>
             </ul>
             <form className="d-flex">

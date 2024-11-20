@@ -1,11 +1,15 @@
 
-import React, { useState } from 'react'
+import React from 'react'
+import Banner from './Banner'
+import About from './About'
+
+
 
 
 
 
 const Home = () => {
-    const [text, setText] = useState("Hello world")
+   /*  const [text, setText] = useState("Hello world")
     const [alert, setAlert] = useState('null')
     const handleUppercase = () => {
         console.log("you clicked Uppercase button");
@@ -37,10 +41,10 @@ const Home = () => {
         setTimeout(() => {
             setAlert(null)
         }, 1000);
-    }
+    } */
     return (
         <div>
-            this is Home page
+           {/*  this is Home page
 
             {alert && (
                 <div className={`alert alert-${alert.type} alert-dismissible fade show container`} role="alert">
@@ -62,7 +66,9 @@ const Home = () => {
                 <p>{0.008 * text.split(' ').length}average time to read</p>
                 <h4>preview text</h4>
                 <p>{text.length > 0 ? text : "no preview to display"}</p>
-            </div>
+            </div> */}
+        <Banner/>
+        <About/>
         </div>
     )
 }

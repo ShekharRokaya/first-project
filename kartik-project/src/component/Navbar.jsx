@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
-
+import { FaShoppingCart } from "react-icons/fa";
+import productContext from '../Context/productContext'
 const Navbar = (props) => {
+  const context = useContext(productContext)
+  const {state:{cart} } = context
   return (
     <div>
       <div className='row'>
@@ -41,7 +44,19 @@ const Navbar = (props) => {
                   <Link className="nav-link" to="/login">Login</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/user/shikhar/rokaya">User</Link>
+                  <Link className="nav-link" to="/user">User</Link>
+
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link  position-relative" to="/cartitem"><FaShoppingCart />
+                   {/*  <button type="button" class="btn btn-primary "> */}
+                     
+                      <span class="position-absolute top-5 start-100 translate-middle badge  bg-danger">
+                        {cart.length}
+                        <span class="visually-hidden">unread messages</span>
+                      </span>
+                   {/*  </button> */}
+                  </Link>
 
                 </li>
 

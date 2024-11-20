@@ -21,6 +21,7 @@ import UserList from './component/UserList';
 import ProductState from './Context/ProductState';
 import Signup from './component/Signup';
 import Login from './component/Login';
+import CartItems from './component/CartItems';
 
 
 
@@ -75,6 +76,7 @@ function App() {
             <Route path="/user" element={<UserList />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/cartitem" element={<CartItems />} />
          
           </Routes>
         </Router>

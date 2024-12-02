@@ -22,6 +22,7 @@ import ProductState from './Context/ProductState';
 import Signup from './component/Signup';
 import Login from './component/Login';
 import CartItems from './component/CartItems';
+import Addproduct from './component/Addproduct';
 
 
 
@@ -77,6 +78,7 @@ function App() {
             <Route path="/signup" element={<Signup />} />
             <Route path="/login" element={<Login />} />
             <Route path="/cartitem" element={<CartItems />} />
+            <Route path="/addproduct" element={<Addproduct />} />
          
           </Routes>
         </Router>

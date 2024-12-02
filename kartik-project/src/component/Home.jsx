@@ -2,6 +2,7 @@
 import React from 'react'
 import Banner from './Banner'
 import About from './About'
+import { useState } from 'react'
 
 
 
@@ -9,6 +10,21 @@ import About from './About'
 
 
 const Home = () => {
+
+    const [count , setCount]= useState(0)
+
+    const increment =()=>{
+        setCount(count+4)
+   
+    }
+    const decrement = ()=>{
+        setCount(count - 1)
+    }
+
+
+
+
+
    /*  const [text, setText] = useState("Hello world")
     const [alert, setAlert] = useState('null')
     const handleUppercase = () => {
@@ -44,6 +60,11 @@ const Home = () => {
     } */
     return (
         <div>
+
+<h1>count :{count}</h1>
+<button onClick={increment}> increase:{increment} </button>
+<button onClick={decrement}>decrremnt: {decrement}</button>
+
            {/*  this is Home page
 
             {alert && (
